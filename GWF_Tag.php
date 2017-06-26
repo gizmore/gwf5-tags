@@ -27,7 +27,7 @@ final class GWF_Tag extends GDO
 	/**
 	 * @return GWF_Tag[]
 	 */
-	public static function all()
+	public function all()
 	{
 		if (!($cache = GDOCache::get('gwf_tags')))
 		{

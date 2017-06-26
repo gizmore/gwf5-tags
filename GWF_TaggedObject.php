@@ -15,7 +15,7 @@ trait GWF_TaggedObject
 
 		$new = array_diff($newTags, $oldTags);
 		$deleted = array_diff($oldTags, $newTags);
-		$all = GWF_Tag::all();
+		$all = GWF_Tag::table()->all();
 		foreach ($new as $tagName)
 		{
 			if (!($tag = (@$all[$tagName])))

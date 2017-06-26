@@ -42,7 +42,7 @@ final class GDO_Tags extends GDOType
 	public function initJSON()
 	{
 		return json_encode(array(
-			'all' => array_keys(GWF_Tag::all()),
+				'all' => array_keys(GWF_Tag::table()->all()),
 			'tags' => json_decode($this->formValue()),
 		));
 	}

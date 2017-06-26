@@ -6,7 +6,7 @@ final class Tags_CompleteTag extends GWF_MethodCompletion
 		$q = $this->getSearchTerm();
 		$max = $this->getMaxSuggestions();
 		$result = [];
-		foreach (GWF_Tag::all() as $tag)
+		foreach (GWF_Tag::table()->all() as $tag)
 		{
 			if ( (!$q) || (mb_stripos($tag->getName(), $q)!==false) )
 			{
