@@ -10,6 +10,7 @@
    md-on-add="onChange()"
    md-on-remove="onChange()"
    md-removable="removable"
+   md-add-on-blur="true"
    md-max-chips="<?php echo $field->maxTags; ?>"
    readonly="<?php echo $field->writable?'false':'true'; ?>"
    required="<?php echo $field->null?'false':'true'; ?>"
