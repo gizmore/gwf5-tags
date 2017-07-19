@@ -54,7 +54,6 @@ final class Tags_AdminEdit extends GWF_MethodForm
 // 				$tagTable
 // 			}
 // 		}
-// 		var_dump($tag);
 	}
 
 	public function onSubmit_delete(GWF_Form $form)
